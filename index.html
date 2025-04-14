@@ -1,0 +1,90 @@
+<html>
+<head>
+  <title>Chinese Intangible Cultural Heritage</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+  <style>
+    body {
+      background-color: pink;
+      text-align: center;
+    }
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 0 10px;
+      /* hover cursor style change to help */
+      cursor: help;
+      /* define hover animation */
+      transition: transform 0.5s;
+    }
+
+    /* hover on image to enlarge */
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row">
+    <img src="img/01.png" id="icon1">
+    <img src="img/02.png" id="icon2">
+    <img src="img/03.png" id="icon3">
+  </div>
+  <div class="row">
+    <img src="img/04.png" id="icon4">
+    <img src="img/05.png" id="icon5">
+    <img src="img/06.png" id="icon6">
+  </div>
+  <div class="row">
+    <img src="img/07.png" id="icon7">
+    <img src="img/08.png" id="icon8">
+    <img src="img/09.png" id="icon9">
+  </div>
+
+  <script>
+    var sound1 = new buzz.sound("sound/01.wav");
+    var sound2 = new buzz.sound("sound/02.wav");
+    var sound3 = new buzz.sound("sound/03.wav");
+    var sound4 = new buzz.sound("sound/04.wav");
+    var sound5 = new buzz.sound("sound/05.wav");
+    var sound6 = new buzz.sound("sound/06.wav");
+    var sound7 = new buzz.sound("sound/07.wav");
+    var sound8 = new buzz.sound("sound/08.wav");
+    var sound9 = new buzz.sound("sound/09.wav");
+
+    document.getElementById("icon1").addEventListener("click", function() {
+      sound1.play();
+    });
+    document.getElementById("icon2").addEventListener("click", function() {
+      sound2.play();
+    });
+    document.getElementById("icon3").addEventListener("click", function() {
+      sound3.play();
+    });
+    document.getElementById("icon4").addEventListener("click", function() {
+      sound4.play();
+    });
+    document.getElementById("icon5").addEventListener("click", function() {
+      sound5.play();
+    });
+    document.getElementById("icon6").addEventListener("click", function() {
+      sound6.play();
+    });
+    document.getElementById("icon7").addEventListener("click", function() {
+      sound7.play();
+    });
+    document.getElementById("icon8").addEventListener("click", function() {
+      sound8.play();
+    });
+    document.getElementById("icon9").addEventListener("click", function() {
+      sound9.play();
+    });
+  </script>
+
+</body>
+</html>
