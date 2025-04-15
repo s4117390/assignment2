@@ -1,49 +1,56 @@
+<!DOCTYPE html>
 <html>
+    
 <head>
   <title>Chinese Intangible Cultural Heritage</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
   <style>
     body {
-      background-color: pink;
-      text-align: center;
+      background-color: #375240;
     }
 
     .row {
-      margin-bottom: 20px;
+      width: 720px;
+      margin: 60px auto;
     }
 
-    img {
+    .image-container {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 20px;
+    }
+
+    .image-container img {
       width: 200px;
       height: 200px;
-      margin: 0 10px;
-      /* hover cursor style change to help */
       cursor: help;
-      /* define hover animation */
-      transition: transform 0.5s;
+      transition: transform 0.8s;
     }
 
-    /* hover on image to enlarge */
-    img:hover {
-      transform: scale(1.05);
+    .image-container img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
+
 <body>
 
   <div class="row">
-    <img src="img/01.png" id="icon1">
-    <img src="img/02.png" id="icon2">
-    <img src="img/03.png" id="icon3">
+    <div class="image-container"><img src="img/01.png" id="icon1" /></div>
+    <div class="image-container"><img src="img/02.png" id="icon2" /></div>
+    <div class="image-container"><img src="img/03.png" id="icon3" /></div>
   </div>
+
   <div class="row">
-    <img src="img/04.png" id="icon4">
-    <img src="img/05.png" id="icon5">
-    <img src="img/06.png" id="icon6">
+    <div class="image-container"><img src="img/04.png" id="icon4" /></div>
+    <div class="image-container"><img src="img/05.png" id="icon5" /></div>
+    <div class="image-container"><img src="img/06.png" id="icon6" /></div>
   </div>
+
   <div class="row">
-    <img src="img/07.png" id="icon7">
-    <img src="img/08.png" id="icon8">
-    <img src="img/09.png" id="icon9">
+    <div class="image-container"><img src="img/07.png" id="icon7" /></div>
+    <div class="image-container"><img src="img/08.png" id="icon8" /></div>
+    <div class="image-container"><img src="img/09.png" id="icon9" /></div>
   </div>
 
   <script>
@@ -57,34 +64,35 @@
     var sound8 = new buzz.sound("sound/08.wav");
     var sound9 = new buzz.sound("sound/09.wav");
 
-    document.getElementById("icon1").addEventListener("click", function() {
+    document.getElementById("icon1").addEventListener("click", function () {
       sound1.play();
     });
-    document.getElementById("icon2").addEventListener("click", function() {
+    document.getElementById("icon2").addEventListener("click", function () {
       sound2.play();
     });
-    document.getElementById("icon3").addEventListener("click", function() {
+    document.getElementById("icon3").addEventListener("click", function () {
       sound3.play();
     });
-    document.getElementById("icon4").addEventListener("click", function() {
+    document.getElementById("icon4").addEventListener("click", function () {
       sound4.play();
     });
-    document.getElementById("icon5").addEventListener("click", function() {
+    document.getElementById("icon5").addEventListener("click", function () {
       sound5.play();
     });
-    document.getElementById("icon6").addEventListener("click", function() {
+    document.getElementById("icon6").addEventListener("click", function () {
       sound6.play();
     });
-    document.getElementById("icon7").addEventListener("click", function() {
+    document.getElementById("icon7").addEventListener("click", function () {
       sound7.play();
     });
-    document.getElementById("icon8").addEventListener("click", function() {
+    document.getElementById("icon8").addEventListener("click", function () {
       sound8.play();
     });
-    document.getElementById("icon9").addEventListener("click", function() {
+    document.getElementById("icon9").addEventListener("click", function () {
       sound9.play();
     });
   </script>
 
 </body>
+
 </html>
